@@ -26,6 +26,7 @@
 !5LAWS
 !AUTHOR
 !CHANGELOG
+!CHECKSUM
 !CONTRIBUTING
 !CONTRIBUTORS
 !EMAIL
@@ -35,17 +36,21 @@
 !LICENSE
 !METADATA
 !ORIGIN
+!PACKAGES
 !PRIVACY
 !README
 !REFERENCES
 !RULES
 !SECURITY
+!SETUP
 !VERSION
 !WEBSITE
 
 !*.mjs
 !*.json
-!*.html
+!*.resume
+!*.pdf
+!*.yaml
 
 !.husky/
 !.husky/commit-msg
@@ -55,23 +60,26 @@
 !.vscode/
 !.vscode/**/*.json
 
-!assets/
-!assets/images/
-!assets/scripts/
-!assets/styles/
-!assets/**/*.css
-!assets/**/*.js
-!assets/**/*.mjs
-!assets/**/*.html
-!assets/**/*.svg
-!assets/**/*.ico
-!assets/**/*.png
+!electron/
+!electron/src/
+!electron/src/**/*
+!electron/dist/
+!electron/dist/**/*
+
+!formats/
+!formats/**/*.abnf
+!formats/**/*.peg
+
+!go/
+!go/service/
+!go/service/**/*.go
+!go/service/**/*.mod
 
 !helps/
 !helps/**/*.help
 
-!partials/
-!partials/**/*.html
+!public/
+!public/**/*
 
 !scripts/
 !scripts/**/*.js
@@ -82,6 +90,21 @@
 !scripts/**/*.sh
 !scripts/**/*.bash
 !scripts/**/*.zig
+!scripts/**/*.py
+
+!settings/
+!settings/**/*.setting
+
+!storybook/
+!storybook/.storybook/
+!storybook/public/
+!storybook/stories/
+!storybook/.storybook/**/*
+!storybook/public/**/*
+!storybook/stories/**/*
+!storybook/.npmrc
+!storybook/package.json
+!storybook/tsconfig.json
 
 !templates/
 !templates/**/*.template
