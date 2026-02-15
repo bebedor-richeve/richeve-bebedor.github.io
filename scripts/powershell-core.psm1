@@ -167,8 +167,8 @@ function Assert-WindowsPlatform {
             $PSVersionTable.OS -like '*Windows*'
 
         if (-not $isWindowsPlatform) {
-            throw "This script requires Windows platform. Current: " +
-                "$($PSVersionTable.OS)"
+            throw ("This script requires Windows platform. Current: " +
+                "$($PSVersionTable.OS)")
         }
     }
     catch {
@@ -276,8 +276,8 @@ function Invoke-PowerShellCoreTransition {
 
         if ($currentVersion -ne $requiredVersion) {
             Write-WarningLog -Scope "PWSH-TRANSITION" `
-                -Message "PowerShell version mismatch. Current: " +
-                "$currentVersion, Required: $requiredVersion"
+                -Message ("PowerShell version mismatch. Current: " +
+                "$currentVersion, Required: $requiredVersion")
         }
     }
     catch {
@@ -320,8 +320,8 @@ function Assert-PowerShellVersionStrict {
         $requiredVersion = [version]'7.5.4'
 
         if ($currentVersion -ne $requiredVersion) {
-            throw "PowerShell version mismatch. Current: " +
-                "$currentVersion, Required: $requiredVersion"
+            throw ("PowerShell version mismatch. Current: " +
+                "$currentVersion, Required: $requiredVersion")
         }
     }
     catch {
