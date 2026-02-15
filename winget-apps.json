@@ -12,12 +12,22 @@
       "Packages": [
         {
           "PackageIdentifier": "Gerardog.gsudo",
-          "Version": "2.4.3",
+          "Version": "2.6.1",
           "Source": "winget"
         },
         {
           "PackageIdentifier": "Microsoft.PowerShell",
-          "Version": "7.5.4",
+          "Version": "7.5.4.0",
+          "Source": "winget"
+        },
+        {
+          "PackageIdentifier": "Python.Python.3.12",
+          "Version": "3.12.10",
+          "Source": "winget"
+        },
+        {
+          "PackageIdentifier": "GoLang.Go",
+          "Version": "1.25.7",
           "Source": "winget"
         }
       ]
