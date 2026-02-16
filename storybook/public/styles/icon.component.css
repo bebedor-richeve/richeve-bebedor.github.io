@@ -1,10 +1,12 @@
 main.concise-component svg.icon:not(.logo) {
     width: var(--concise-icon-size);
     height: var(--concise-icon-size);
+
     stroke: currentColor;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
+
     fill: none;
 }
 
