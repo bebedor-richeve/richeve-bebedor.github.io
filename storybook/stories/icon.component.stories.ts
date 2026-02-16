@@ -15,3 +15,14 @@ export const Icon: Story = {
     />
   `
 };
+
+export const LogoIcon: Story = {
+  render: () => `
+    <span
+        class="logo icon"
+        hx-get="/partials/logo-icon.component.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
+    />
+  `
+};
