@@ -1,19 +1,34 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/assets/fonts/FiraCode-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root,
 :host {
+    --concise-font-family: 'Fira Code', monospace;
+
     --concise-grid-unit: 47px;
 
     --concise-icon-size: 23px;
     --concise-logo-icon-size: 37px;
 
-    --concise-text-small: 13px;
-    --concise-text-body: 17px;
-    --concise-text-lead: 19px;
-    --concise-text-h6: 19px;
-    --concise-text-h5: 23px;
-    --concise-text-h4: 29px;
-    --concise-text-h3: 31px;
-    --concise-text-h2: 37px;
-    --concise-text-h1: 43px;
+    --concise-text-heading-1: 43px;
+    --concise-text-heading-2: 37px;
+    --concise-text-heading-3: 31px;
+    --concise-text-heading-4: 29px;
+    --concise-text-heading-5: 23px;
+    --concise-text-heading-6: 19px;
+    --concise-text-base: 17px;
+
+    --concise-text-main-section-title: var(--concise-text-heading-1);
+    --concise-text-main-section-description: var(--concise-text-heading-6);
+    --concise-text-support-section-title: var(--concise-text-heading-2);
+    --concise-text-support-section-description: var(--concise-text-heading-6);
+    --concise-text-specific-section-title: var(--concise-text-heading-3);
+    --concise-text-specific-section-description: var(--concise-text-heading-6);
 
     --concise-list-item-unit: 7;
     --concise-list-item-content-unit: 5;
@@ -33,7 +48,14 @@
     --collapsed-sidebar-width: var(--concise-grid-unit);
 }
 
+aside.concise-component,
+aside.concise-component *,
+main.concise-component,
 main.concise-component * {
+    font-family: var(--concise-font-family);
+    font-variant-ligatures: contextual;
+    font-size: var(--concise-text-base);
+
     box-sizing: border-box;
     border: none;
     border-radius: 0;
