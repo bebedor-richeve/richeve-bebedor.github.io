@@ -1,0 +1,27 @@
+main.concise-component svg.icon {
+    width: var(--concise-icon-size);
+    height: var(--concise-icon-size);
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+main.concise-component span.icon:has(> svg.icon) {
+    width: var(--concise-grid-unit);
+    height: var(--concise-grid-unit);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.concise-component span.logo.icon:has(> svg.icon) {
+    width: var(--concise-grid-unit);
+    height: var(--concise-grid-unit);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
