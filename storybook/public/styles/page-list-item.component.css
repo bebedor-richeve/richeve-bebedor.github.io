@@ -1,5 +1,5 @@
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item {
+aside > nav > ul.page-list.list > li.page-list-item.list-item {
     padding: 0;
     margin: 0;
 
@@ -14,7 +14,8 @@ aside > nav > ul.page-list > li.page-list-item {
 }
 
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item > a.page-link {
+aside > nav > ul.page-list.list > li.page-list-item.list-item >
+a.page-list-item-link.link {
     padding: var(--concise-grid-spacing);
     margin: 0;
 
@@ -28,17 +29,20 @@ aside > nav > ul.page-list > li.page-list-item > a.page-link {
 }
 
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item:has(> a.page-link:only-child) {
+aside > nav > ul.page-list.list >
+li.page-list-item.list-item:has(> a.page-list-item-link.link:only-child) {
     justify-content: center;
 }
 
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item:has(> button.control) {
+aside > nav > ul.page-list.list >
+li.page-list-item.list-item:has(> button.page-list-item-control.control) {
     justify-content: flex-end;
 }
 
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item:has(> span.icon) {
+aside > nav > ul.page-list.list >
+li.page-list-item.list-item:has(> span.page-list-item-icon.icon) {
     justify-content: flex-start;
 }
 
@@ -46,7 +50,8 @@ aside > nav > ul.page-list > li.page-list-item:has(> span.icon) {
  * Remove default PicoCSS button styles for control buttons
  */
 main.concise-component section.left-sidebar.sidebar >
-aside > nav > ul.page-list > li.page-list-item > button.control {
+aside > nav > ul.page-list.list >
+li.page-list-item.list-item > button.page-list-item-control.control {
     border: none;
     outline: none;
     box-shadow: none;
