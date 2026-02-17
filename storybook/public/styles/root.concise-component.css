@@ -36,7 +36,11 @@
     --concise-text-base: 11px;
     --concise-text-line-height: 17px;
 
-    --concise-base-spacing: calc((var(--concise-base-unit) / 5) / 2);
+    --concise-list-item-unit: 7;
+    --concise-list-item-content-unit: 5;
+
+    --concise-base-division: calc(var(--concise-base-unit) / 5);
+    --concise-base-spacing: calc(var(--concise-base-division) / 2);
 
     --concise-text-main-section-title: var(--concise-text-heading-1);
     --concise-text-main-section-description: var(--concise-text-heading-6);
@@ -44,9 +48,6 @@
     --concise-text-support-section-description: var(--concise-text-heading-6);
     --concise-text-specific-section-title: var(--concise-text-heading-3);
     --concise-text-specific-section-description: var(--concise-text-heading-6);
-
-    --concise-list-item-unit: 7;
-    --concise-list-item-content-unit: 5;
 
     --concise-list-item-height: var(--concise-base-unit);
     --concise-list-item-width: calc(
@@ -113,6 +114,7 @@
     line-height: var(--concise-text-line-height);
     font-variant-ligatures: contextual;
     font-weight: normal;
+    text-decoration: none;
 
     box-sizing: border-box;
     border: none;
