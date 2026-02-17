@@ -5,7 +5,7 @@ export default meta;
 
 type Story = StoryObj;
 
-export const PageTreeHeader: Story = {
+export const PageTreeHeaderBare: Story = {
   render: () => `
     <aside
         class="
@@ -16,19 +16,11 @@ export const PageTreeHeader: Story = {
             sidebar
             bar
         "
+
+        hx-get="/stories/page-tree-header-bare.component.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
     >
-        <section
-            class="
-                list-item
-
-                group-list
-                list
-            "
-
-            hx-get="/stories/page-tree-header.component.html"
-            hx-trigger="load"
-            hx-swap="innerHTML"
-        />
     </aside>
   `
 };
@@ -44,19 +36,11 @@ export const PageTreeHeaderWithControl: Story = {
             sidebar
             bar
         "
+
+        hx-get="/stories/page-tree-header-with-control.component.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
     >
-        <section
-            class="
-                list-item
-
-                group-list
-                list
-            "
-
-            hx-get="/stories/page-tree-header-with-control.component.html"
-            hx-trigger="load"
-            hx-swap="innerHTML"
-        />
     </aside>
   `
 };
@@ -72,24 +56,16 @@ export const PageTreeHeaderWithLogoIcon: Story = {
             sidebar
             bar
         "
+
+        hx-get="/stories/page-tree-header-with-logo-icon.component.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
     >
-        <section
-            class="
-                list-item
-
-                group-list
-                list
-            "
-
-            hx-get="/stories/page-tree-header-with-logo-icon.component.html"
-            hx-trigger="load"
-            hx-swap="innerHTML"
-        />
     </aside>
   `
 };
 
-export const CompletePageTreeHeader: Story = {
+export const PageTreeHeaderBase: Story = {
   render: () => `
     <aside
         class="
@@ -100,19 +76,11 @@ export const CompletePageTreeHeader: Story = {
             sidebar
             bar
         "
+
+        hx-get="/stories/page-tree-header-base.component.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
     >
-        <section
-            class="
-                list-item
-
-                group-list
-                list
-            "
-
-            hx-get="/stories/complete-page-tree-header.component.html"
-            hx-trigger="load"
-            hx-swap="innerHTML"
-        />
     </aside>
   `
 };
