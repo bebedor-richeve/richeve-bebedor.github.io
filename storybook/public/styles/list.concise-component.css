@@ -1,0 +1,21 @@
+body.concise-component .list {
+    height: auto;
+    min-height: var(--concise-list-height);
+    min-width: var(--concise-list-width);
+
+    display: flex;
+    flex-direction: column;
+}
+
+body.concise-component .list > .list-item {
+    height: auto;
+    min-height: var(--concise-list-item-height);
+    min-width: var(--concise-list-item-width);
+
+    display: flex;
+    flex-direction: row;
+}
+
+body.concise-component section.group-list.list {
+    flex-direction: column;
+}
