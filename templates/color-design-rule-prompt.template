@@ -1,0 +1,197 @@
+AI COLOR VALIDATION PROTOCOL
+
+VALIDATION MODE — DO NOT REDESIGN
+
+PHASE 0 — CONTEXT & AUTHORITY
+
+    - Authority:
+
+        - Validate a UI against a strict dark-first “Hybrid Controlled Intelligence”
+          color governance system.
+        - You MUST NOT redesign or suggest improvements unless violations are detected.
+        - You MUST return results in the structured format only (see OUTPUT FORMAT).
+
+    - Rule Precedence:
+
+        - Validation rules below are authoritative for this protocol.
+        - Output structure rules under OUTPUT FORMAT override general formatting.
+        - If any rule is ambiguous, conflicting, or incomplete:
+            - First consult any available internal flow help for guidance only.
+            - Do NOT infer intent or make assumptions.
+            - If ambiguity remains, stop and request clarification from the author.
+
+    - Output Structure Binding:
+
+        - The OUTPUT FORMAT defined in this file is the ONLY permitted structure.
+        - You MUST use the format verbatim when creating validation outputs.
+        - You MUST NOT invent, omit, reorder, or rename fields.
+
+    - Flow Help Scope:
+
+        - Any flow help defines internal decision logic only.
+        - It MUST NOT override this protocol, validation rules, or the output structure.
+
+    - Interaction Constraint:
+
+        - Execution is non-interactive by default.
+        - Do NOT ask questions unless blocked by unresolved ambiguity in the input.
+
+    - Execution Boundary:
+
+        - No redesign suggestions or stylistic recommendations are permitted
+          unless FAIL is present in the validation results.
+
+PHASE 1 — INGESTION
+
+    - Ingestion Artifact: UI Viewport & Section Map
+
+        - Input types supported:
+            1. Image (single screenshot per viewport, including overlays/modals)
+            2. Figma export (frames/artboards with layer geometry)
+            3. Code (DOM/CSS tokens and computed styles)
+
+        - Enumerate visible viewports and, for each viewport, list sections:
+            - Viewport: a single visible screen state without scrolling
+              (including modals/overlays).
+            - Section: a visually bounded content group separated by spacing,
+              container logic, or background differentiation.
+
+        - Output this viewport/section map verbatim before proceeding to PHASE 2.
+        - Do not analyze, group, normalize, or plan in this phase.
+
+PHASE 2 — NORMALIZATION
+
+    - Single-Target Cycle:
+
+        - Select exactly one viewport for this validation cycle.
+        - Within the selected viewport, include all sections visible in that state.
+        - Do NOT batch multiple viewports. Process additional viewports
+          in subsequent cycles.
+
+    - Failure Rule:
+
+        - If more than one viewport is staged or planned, stop and self-correct:
+          - Unstage extra viewports from the plan.
+          - Keep exactly one viewport.
+          - Restart from PHASE 1 with exactly one planned viewport.
+
+PHASE 3 — ANALYSIS
+
+    - Measurement Guidance:
+
+        - Surface area:
+            - Image: approximate via segmentation/masking or pixel-count by
+              luminance and hue classification.
+            - Figma: compute area from layer frames/bounds; exclude fully transparent
+              or non-visible layers.
+            - Code: derive from rendered box areas and computed background colors.
+
+        - Classification:
+            - Black variants: dark neutral family designated by the system.
+            - White variants: light neutral family designated by the system.
+            - Accent family: one semantic color group (orange, blue, green,
+              yellow, violet, red).
+            - Lighter accent variant: the single lighter tone permitted across
+              all accent families.
+
+        - Evidence:
+            - Report quantitative estimates (percentages, counts, sizes),
+              citing viewport-level and section-level measures where applicable.
+
+    - VALIDATION CHECKLIST (17 Rules):
+
+        SURFACE DOMINANCE
+        1. Black variants occupy ≥ 70% of visible surface area per viewport.
+        2. White variants occupy ≤ 30% of visible surface area.
+        3. At least 50% of the viewport contains no accent color (by visible surface area).
+
+        ACCENT DISCIPLINE
+        4. No more than two accent families are present per viewport.
+        5. Only one lighter accent variant is used across all accent families.
+        6. Accent colors are not used decoratively or as large background fills.
+        7. Accent colors appear only when fulfilling their semantic roles.
+        8. Orange appears only as primary action.
+        9. Only one primary orange CTA exists per section.
+
+        SEMANTIC INTEGRITY
+        10. Color meanings are not repurposed:
+            - Orange → primary action
+            - Blue → system/data
+            - Green → confirmation
+            - Yellow → warning
+            - Violet → AI/premium
+            - Red → critical/destructive
+        11. No more than two semantic states appear within a single section.
+
+        HIERARCHY CONTROL
+        12. Each section contains only one dominant focal element.
+        13. Dominance is established through size, placement, or contrast —
+            not through multiple accent colors.
+
+        ENERGY & NOISE CONTROL
+        14. The design does not feel visually energetic due to excessive saturation.
+        15. Visual noise has not increased through added accent usage.
+        16. If high energy is detected, confirm saturation is reduced before
+            contrast adjustments.
+
+        ACCESSIBILITY
+        17. Text and critical UI elements meet WCAG AA contrast requirements.
+
+    - Rule Output Requirements:
+
+        - For each rule, output PASS or FAIL.
+        - If FAIL, explain the violation clearly and quantitatively.
+
+PHASE 4 — DECISION / ACTION
+
+    - Create Validation Output:
+
+        - Use only artifacts from PHASE 1 ingestion.
+        - Follow the single-viewport-per-cycle rule.
+        - Define results strictly using the OUTPUT FORMAT.
+        - Do not add narrative, recommendations, or redesign notes unless FAIL exists.
+
+    - Produce Results:
+
+        - Return the structured output exactly as defined.
+        - The count of total rules must be 17.
+        - The Passed/Failed counts must match individual rule outcomes.
+
+PHASE 5 — VERIFICATION
+
+    - Verify Output Structure:
+
+        - The structure fields exist and are in order.
+        - Rule outcomes are complete for all 17 rules.
+        - Failed rules section lists only the rules that failed, each with:
+            - Description of violation
+            - Estimated percentage or measurable evidence
+            - Severity Level: Minor / Major / Critical
+
+    - Verify Assessment:
+
+        - Overall assessment is one of:
+            - Controlled / Slight Drift / System Breakdown
+
+    - Failure Handling:
+
+        - If verification fails or structure is invalid, do not proceed.
+        - Report the failure and enter a terminal stop state.
+
+OUTPUT FORMAT
+
+    VALIDATION RESULT: PASS / FAIL
+
+    SUMMARY:
+    - Total Rules Checked: 17
+    - Passed: X
+    - Failed: X
+
+    FAILED RULES:
+    Rule #:
+    - Description of violation
+    - Estimated percentage or measurable evidence
+    - Severity Level: Minor / Major / Critical
+
+    OVERALL ASSESSMENT:
+    - Controlled / Slight Drift / System Breakdown
