@@ -1,12 +1,27 @@
 import type { StorybookConfig } from "@storybook/html-vite";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
 
 const config: StorybookConfig = {
-  stories: ["../stories/**/*.stories.@(ts|js|html)"],
-  framework: { name: "@storybook/html-vite", options: {} },
-  addons: [],
-  staticDirs: ["../public"]
+    stories: [
+        "../stories/**/*.stories.ts"
+    ],
+    framework: {
+        name: "@storybook/html-vite",
+        options: {}
+    },
+    addons: [],
+    staticDirs: [
+        "../public"
+    ],
+    viteFinal: async (viteConfig) => {
+        // This the suggested tweak for Storybook to work with Windows properly
+        viteConfig.server ??= {};
+        viteConfig.server.watch = {
+            usePolling: true,
+            interval: 200
+        };
+
+        return viteConfig;
+    }
 };
 
 export default config;
