@@ -1,17 +1,17 @@
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list {
     width: var(--concise-list-width);
     height: auto;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list >
 li.page-list-item.list-item {
     height: var(--concise-list-item-height);
     width: var(--concise-list-item-width);
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list >
 li.page-list-item.list-item > a.page-list-item-link.link {
     height: var(--concise-list-item-content-height);
@@ -21,19 +21,19 @@ li.page-list-item.list-item > a.page-list-item-link.link {
     align-items: center;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list >
 li.page-list-item.list-item:has(> a.page-list-item-link.link:only-child) {
     justify-content: center;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list >
 li.page-list-item.list-item:has(> button.page-list-item-control.control) {
     justify-content: flex-end;
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list >
+.concise-component aside.left-sidebar.sidebar.bar.list >
 section.group-list.list.list-item > nav > ul.page-list.list >
 li.page-list-item.list-item:has(> span.page-list-item-icon.icon) {
     justify-content: flex-start;
