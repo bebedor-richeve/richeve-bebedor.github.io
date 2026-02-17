@@ -7,7 +7,7 @@ type Story = StoryObj;
 
 export const HomePage: Story = {
   render: () => `
-    <section
+    <home-page
         class="
             list-item
 
