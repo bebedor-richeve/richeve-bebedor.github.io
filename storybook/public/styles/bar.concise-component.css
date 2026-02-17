@@ -1,8 +1,8 @@
-body.concise-component aside.sidebar.bar.list {
+.concise-component aside.sidebar.bar.list {
     height: 100vh;
     width: var(--concise-list-width);
 }
 
-body.concise-component aside.left-sidebar.sidebar.bar.list {
-    
+.concise-component aside.left-sidebar.sidebar.bar.list {
+
 }
