@@ -1,4 +1,4 @@
-body.concise-component button.control {
+.concise-component button.control {
     height: var(--concise-control-height);
     width: var(--concise-control-width);
 
@@ -7,7 +7,7 @@ body.concise-component button.control {
     justify-content: center;
 }
 
-body.concise-component button.icon-control.control:has(> svg.icon:only-child) {
+.concise-component button.icon-control.control:has(> svg.icon:only-child) {
     height: var(--concise-icon-control-height);
     width: var(--concise-icon-control-width);
 }
