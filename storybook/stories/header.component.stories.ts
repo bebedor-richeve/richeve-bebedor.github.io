@@ -5,42 +5,114 @@ export default meta;
 
 type Story = StoryObj;
 
-export const Header: Story = {
+export const PageTreeHeader: Story = {
   render: () => `
-    <section
-        hx-get="/partials/header.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-    />
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+
+            hx-get="/stories/page-tree-header.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        />
+    </aside>
   `
 };
 
-export const HeaderWithControl: Story = {
+export const PageTreeHeaderWithControl: Story = {
   render: () => `
-    <section
-        hx-get="/partials/header-with-control.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-    />
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+
+            hx-get="/stories/page-tree-header-with-control.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        />
+    </aside>
   `
 };
 
-export const HeaderWithLogoIcon: Story = {
+export const PageTreeHeaderWithLogoIcon: Story = {
   render: () => `
-    <section
-        hx-get="/partials/header-with-logo-icon.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-    />
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+
+            hx-get="/stories/page-tree-header-with-logo-icon.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        />
+    </aside>
   `
 };
 
-export const CompleteHeader: Story = {
+export const CompletePageTreeHeader: Story = {
   render: () => `
-    <section
-        hx-get="/partials/complete-header.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-    />
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+
+            hx-get="/stories/complete-page-tree-header.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        />
+    </aside>
   `
 };
