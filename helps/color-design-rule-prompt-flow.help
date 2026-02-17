@@ -1,0 +1,110 @@
+VALIDATION MODE — DO NOT REDESIGN
+
+You are validating a UI against a strict dark-first “Hybrid Controlled Intelligence” color governance system.
+
+You must NOT redesign or suggest improvements unless violations are detected.
+
+Return results in structured format only.
+
+INPUT
+
+The UI design (image, Figma export, or code) is provided.
+
+DEFINITIONS
+
+Viewport: A single visible screen state without scrolling (including modals/overlays).
+
+Section: A visually bounded content group separated by spacing, container logic, or background differentiation.
+
+Accent Family: One semantic color group (orange, blue, green, yellow, violet, red).
+
+VALIDATION CHECKLIST
+
+Evaluate the design against the following constraints.
+
+For each rule:
+
+Output: PASS or FAIL
+
+If FAIL: Explain violation clearly and quantitatively.
+
+SURFACE DOMINANCE
+
+Black variants occupy ≥ 70% of visible surface area per viewport.
+
+White variants occupy ≤ 30% of visible surface area.
+
+At least 50% of the viewport contains no accent color (by visible surface area).
+
+ACCENT DISCIPLINE
+
+No more than two accent families are present per viewport.
+
+Only one lighter accent variant is used across all accent families.
+
+Accent colors are not used decoratively or as large background fills.
+
+Accent colors appear only when fulfilling their semantic roles.
+
+Orange appears only as primary action.
+
+Only one primary orange CTA exists per section.
+
+SEMANTIC INTEGRITY
+
+Color meanings are not repurposed:
+
+Orange → primary action
+
+Blue → system/data
+
+Green → confirmation
+
+Yellow → warning
+
+Violet → AI/premium
+
+Red → critical/destructive
+
+No more than two semantic states appear within a single section.
+
+HIERARCHY CONTROL
+
+Each section contains only one dominant focal element.
+
+Dominance is established through size, placement, or contrast — not through multiple accent colors.
+
+ENERGY & NOISE CONTROL
+
+The design does not feel visually energetic due to excessive saturation.
+
+Visual noise has not increased through added accent usage.
+
+If high energy is detected, confirm saturation is reduced before contrast adjustments.
+
+ACCESSIBILITY
+
+Text and critical UI elements meet WCAG AA contrast requirements.
+
+OUTPUT FORMAT
+
+Return the following structure:
+
+VALIDATION RESULT: PASS / FAIL
+
+SUMMARY:
+- Total Rules Checked: 17
+- Passed: X
+- Failed: X
+
+FAILED RULES:
+Rule #:
+- Description of violation
+- Estimated percentage or measurable evidence
+- Severity Level: Minor / Major / Critical
+
+OVERALL ASSESSMENT:
+- Controlled / Slight Drift / System Breakdown
+
+
+Do not provide redesign suggestions unless FAIL is present.
