@@ -8,5 +8,6 @@ body.concise-component button.control {
 }
 
 body.concise-component button.icon-control.control:has(> svg.icon:only-child) {
-    width: var(--concise-grid-unit);
+    height: var(--concise-icon-control-height);
+    width: var(--concise-icon-control-width);
 }
