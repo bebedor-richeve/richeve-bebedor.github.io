@@ -7,45 +7,105 @@ type Story = StoryObj;
 
 export const PageListItem: Story = {
   render: () => `
-    <section class="left-sidebar sidebar">
-        <aside>
+    <aside
+        class="
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+        >
             <nav>
-                <ul class="page-list list"
-                    hx-get="/partials/page-list-item.component.html"
+                <ul
+                    class="
+                        page-list
+                        list
+                    "
+
+                    hx-get="/stories/page-list-item.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
                 >
                 </ul>
             </nav>
-        </aside>
-    </section>
+        </section>
+    </aside>
   `
 };
 
 export const PageListItemWithControl: Story = {
   render: () => `
-    <section class="left-sidebar sidebar">
-        <aside>
+    <aside
+        class="
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+        >
             <nav>
-                <ul class="page-list list"
-                    hx-get="/partials/page-list-item-with-control.component.html"
+                <ul
+                    class="
+                        page-list
+                        list
+                    "
+
+                    hx-get="/stories/page-list-item-with-control.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
                 >
                 </ul>
             </nav>
-        </aside>
-    </section>
+        </section>
+    </aside>
   `
 };
 
 export const PageListItemWithIcon: Story = {
   render: () => `
-    <section class="left-sidebar sidebar">
-        <aside>
+    <aside
+        class="
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+        >
             <nav>
-                <ul class="page-list list"
-                    hx-get="/partials/page-list-item-with-icon.component.html"
+                <ul
+                    class="
+                        page-list
+                        list
+                    "
+
+                    hx-get="/stories/page-list-item-with-icon.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
                 >
@@ -58,11 +118,31 @@ export const PageListItemWithIcon: Story = {
 
 export const CompletePageListItem: Story = {
   render: () => `
-    <section class="left-sidebar sidebar">
-        <aside>
+    <aside
+        class="
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <section
+            class="
+                list-item
+
+                group-list
+                list
+            "
+        >
             <nav>
-                <ul class="page-list list"
-                    hx-get="/partials/complete-page-list-item.component.html"
+                <ul
+                    class="
+                        page-list
+                        list
+                    "
+
+                    hx-get="/stories/complete-page-list-item.component.html"
                     hx-trigger="load"
                     hx-swap="innerHTML"
                 >
