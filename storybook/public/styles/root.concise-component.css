@@ -10,18 +10,18 @@
 :host {
     --concise-font-family: 'Fira Code', monospace;
 
-    --concise-grid-unit: 47px;
+    --concise-base-unit: 47px;
 
-    --concise-icon-size: 23px;
     --concise-logo-icon-size: 37px;
+    --concise-icon-size: 23px;
 
-    --concise-text-heading-1: 43px;
-    --concise-text-heading-2: 37px;
-    --concise-text-heading-3: 31px;
-    --concise-text-heading-4: 29px;
-    --concise-text-heading-5: 23px;
-    --concise-text-heading-6: 19px;
-    --concise-text-base: 17px;
+    --concise-text-heading-1: 31px;
+    --concise-text-heading-2: 29px;
+    --concise-text-heading-3: 23px;
+    --concise-text-heading-4: 19px;
+    --concise-text-heading-5: 17px;
+    --concise-text-heading-6: 13px;
+    --concise-text-base: 11px;
 
     --concise-text-main-section-title: var(--concise-text-heading-1);
     --concise-text-main-section-description: var(--concise-text-heading-6);
@@ -33,32 +33,37 @@
     --concise-list-item-unit: 7;
     --concise-list-item-content-unit: 5;
 
-    --concise-list-item-height: var(--concise-grid-unit);
+    --concise-list-item-height: var(--concise-base-unit);
     --concise-list-item-width: calc(
-        var(--concise-grid-unit) * var(--concise-list-item-unit)
+        var(--concise-base-unit) * var(--concise-list-item-unit)
     );
 
     --concise-list-item-content-height: var(--concise-list-item-height);
     --concise-list-item-content-width: calc(
-        var(--concise-grid-unit) * var(--concise-list-item-content-unit)
+        var(--concise-base-unit) * var(--concise-list-item-content-unit)
     );
 
-    --concise-list-height: var(--concise-grid-unit);
+    --concise-list-height: var(--concise-base-unit);
     --concise-list-width: calc(
-        var(--concise-grid-unit) * var(--concise-list-item-unit)
+        var(--concise-base-unit) * var(--concise-list-item-unit)
     );
 
-    --concise-control-height: var(--concise-grid-unit);
+    --concise-control-height: var(--concise-base-unit);
     --concise-control-width: calc(
-        var(--concise-grid-unit) * var(--concise-list-item-unit)
-    )
+        var(--concise-base-unit) * var(--concise-list-item-unit)
+    );
+    --concise-icon-control-height: var(--concise-base-unit);
+    --concise-icon-control-width: var(--concise-base-unit);
 }
 
 body.concise-component,
-body.concise-component * {
+body.concise-component *,
+body.concise-component nav,
+body.concise-component ul {
     font-family: var(--concise-font-family);
     font-size: var(--concise-text-base);
     font-variant-ligatures: contextual;
+    font-weight: normal;
 
     box-sizing: border-box;
     border: none;
@@ -70,4 +75,28 @@ body.concise-component * {
 
     margin: 0;
     padding: 0;
+}
+
+body.concise-component h1 {
+    font-size: var(--concise-text-heading-1);
+}
+
+body.concise-component h2 {
+    font-size: var(--concise-text-heading-2);
+}
+
+body.concise-component h3 {
+    font-size: var(--concise-text-heading-3);
+}
+
+body.concise-component h4 {
+    font-size: var(--concise-text-heading-4);
+}
+
+body.concise-component h5 {
+    font-size: var(--concise-text-heading-5);
+}
+
+body.concise-component h6 {
+    font-size: var(--concise-text-heading-6);
 }
