@@ -1,4 +1,4 @@
-body.concise-component .list {
+.concise-component .list {
     height: auto;
     min-height: var(--concise-list-height);
     min-width: var(--concise-list-width);
@@ -7,7 +7,7 @@ body.concise-component .list {
     flex-direction: column;
 }
 
-body.concise-component .list > .list-item {
+.concise-component .list > .list-item {
     height: auto;
     min-height: var(--concise-list-item-height);
     min-width: var(--concise-list-item-width);
@@ -16,6 +16,6 @@ body.concise-component .list > .list-item {
     flex-direction: row;
 }
 
-body.concise-component section.group-list.list {
+.concise-component section.group-list.list {
     flex-direction: column;
 }
