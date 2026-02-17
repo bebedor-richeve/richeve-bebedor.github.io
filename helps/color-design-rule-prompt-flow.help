@@ -40,23 +40,28 @@ PREVENT UNAUTHORIZED ALTERATIONS.
 
     0.  METADATA ........................................................... 009
     1.  Summary ............................................................ 022
-    2.  Permission ......................................................... 028
-    3.  Contents ........................................................... 034
-    4.  Document Status .................................................... 046
-    5.  Protocol Overview .................................................. 057
-    6.  Phase Execution Guide .............................................. 071
-    7.  AI Agent Decision Tree ............................................. 088
-    8.  Common Scenarios ................................................... 110
-    9.  Validation Checklist ............................................... 125
-    10. Strategic Budget Guidance .......................................... 155
-    11. Curiosity Framework Examples ....................................... 175
+    2.  Permission ......................................................... 033
+    3.  Contents ........................................................... 039
+    4.  Document Status .................................................... 054
+    5.  Protocol Overview .................................................. 061
+    6.  Phase Execution Guide .............................................. 077
+    7.  AI Agent Decision Tree ............................................. 313
+    8.  Common Scenarios ................................................... 345
+    9.  Validation Checklist ............................................... 389
+    10. Strategic Budget Guidance .......................................... 411
+    11. Curiosity Framework Examples ....................................... 459
 
 4.  Document Status:
 
     - This document is a DRAFT specification guide.
     - It explains the color validation protocol flow and decision logic.
-    - It supple
-urpose and decision point:
+    - It supplements the main color-design-rule-prompt.template file.
+    - It provides procedural guidance for AI agents executing validation.
+
+5.  Protocol Overview:
+
+    The protocol consists of 6 phases, each with a specific purpose and
+    decision point:
 
     - Phase 0: Establish authority and read all governing documents
     - Phase 1: Ingest UI design and enumerate viewports and sections
