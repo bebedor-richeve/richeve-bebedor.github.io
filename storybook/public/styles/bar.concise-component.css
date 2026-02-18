@@ -1,8 +1,18 @@
-.concise-component aside.sidebar.bar.list {
-    height: 100vh;
-    width: var(--concise-list-width);
+.concise-component .bar {
+    min-width: var(--concise-base-unit);
+    height: var(--concise-base-unit);
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list {
+.concise-component .sidebar.bar {
+    width: var(--concise-base-unit);
+    height: 100vh;
+}
 
+@media (max-width: 329px) {
+    .concise-component div.left-sidebar.sidebar.bar.spacer {
+        display: none;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
 }
