@@ -1,19 +1,17 @@
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list {
     width: var(--concise-list-width);
     height: auto;
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list >
-li.page-list-item.list-item {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list > li.page-list-item.list-item {
     height: var(--concise-list-item-height);
     width: var(--concise-list-item-width);
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list >
-li.page-list-item.list-item > a.page-list-item-link.link {
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list > li.page-list-item.list-item > a.page-list-item-link.link {
     height: var(--concise-list-item-content-height);
     width: var(--concise-list-item-content-width);
 
@@ -21,20 +19,20 @@ li.page-list-item.list-item > a.page-list-item-link.link {
     align-items: center;
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list >
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list >
 li.page-list-item.list-item:has(> a.page-list-item-link.link:only-child) {
     justify-content: center;
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list >
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list >
 li.page-list-item.list-item:has(> button.page-list-item-control.control) {
     justify-content: flex-end;
 }
 
-.concise-component aside.left-sidebar.sidebar.bar.list >
-section.group-list.list.list-item > nav > ul.page-list.list >
+.concise-component aside.page-tree.left-sidebar.sidebar.bar.list > nav >
+ul.page-list.list >
 li.page-list-item.list-item:has(> span.page-list-item-icon.icon) {
     justify-content: flex-start;
 }
