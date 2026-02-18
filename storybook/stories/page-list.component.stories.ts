@@ -5,10 +5,11 @@ export default meta;
 
 type Story = StoryObj;
 
-export const PageList: Story = {
+export const PageListBare: Story = {
   render: () => `
     <aside
         class="
+            page-tree
             list
 
             left-sidebar
@@ -16,54 +17,78 @@ export const PageList: Story = {
             bar
         "
     >
-        <section
-            class="
-                list-item
-
-                group-list
-                list
-            "
+        <nav
+            hx-get="/stories/page-list-bare.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
         >
-            <nav
-                hx-get="/stories/page-list.component.html"
-                hx-trigger="load"
-                hx-swap="innerHTML"
-            >
-            </nav>
-        </section>
+        </nav>
     </aside>
   `
 };
 
 export const PageListWithControl: Story = {
   render: () => `
-    <section
-        class="left-sidebar sidebar"
-        hx-get="/partials/page-list-with-control.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML">
-    </section>
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <nav
+            hx-get="/stories/page-list-with-control.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        >
+        </nav>
+    </aside>
   `
 };
 
 export const PageListWithIcon: Story = {
   render: () => `
-    <section
-        class="left-sidebar sidebar"
-        hx-get="/partials/page-list-with-icon.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML">
-    </section>
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <nav
+            hx-get="/stories/page-list-with-icon.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        >
+        </nav>
+    </aside>
   `
 };
 
-export const CompletePageList: Story = {
+export const PageListBase: Story = {
   render: () => `
-    <section
-        class="left-sidebar sidebar"
-        hx-get="/partials/complete-page-list.component.html"
-        hx-trigger="load"
-        hx-swap="innerHTML">
-    </section>
+    <aside
+        class="
+            page-tree
+            list
+
+            left-sidebar
+            sidebar
+            bar
+        "
+    >
+        <nav
+            hx-get="/stories/page-list-base.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+        >
+        </nav>
+    </aside>
   `
 };
