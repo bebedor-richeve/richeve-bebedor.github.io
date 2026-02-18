@@ -5,10 +5,11 @@ export default meta;
 
 type Story = StoryObj;
 
-export const PageListItem: Story = {
+export const PageListItemBare: Story = {
   render: () => `
     <aside
         class="
+            page-tree
             list
 
             left-sidebar
@@ -16,28 +17,19 @@ export const PageListItem: Story = {
             bar
         "
     >
-        <section
-            class="
-                list-item
+        <nav>
+            <ul
+                class="
+                    page-list
+                    list
+                "
 
-                group-list
-                list
-            "
-        >
-            <nav>
-                <ul
-                    class="
-                        page-list
-                        list
-                    "
-
-                    hx-get="/stories/page-list-item.component.html"
-                    hx-trigger="load"
-                    hx-swap="innerHTML"
-                >
-                </ul>
-            </nav>
-        </section>
+                hx-get="/stories/page-list-item-bare.component.html"
+                hx-trigger="load"
+                hx-swap="innerHTML"
+            >
+            </ul>
+        </nav>
     </aside>
   `
 };
@@ -46,6 +38,7 @@ export const PageListItemWithControl: Story = {
   render: () => `
     <aside
         class="
+            page-tree
             list
 
             left-sidebar
@@ -53,28 +46,19 @@ export const PageListItemWithControl: Story = {
             bar
         "
     >
-        <section
-            class="
-                list-item
+        <nav>
+            <ul
+                class="
+                    page-list
+                    list
+                "
 
-                group-list
-                list
-            "
-        >
-            <nav>
-                <ul
-                    class="
-                        page-list
-                        list
-                    "
-
-                    hx-get="/stories/page-list-item-with-control.component.html"
-                    hx-trigger="load"
-                    hx-swap="innerHTML"
-                >
-                </ul>
-            </nav>
-        </section>
+                hx-get="/stories/page-list-item-with-control.component.html"
+                hx-trigger="load"
+                hx-swap="innerHTML"
+            >
+            </ul>
+        </nav>
     </aside>
   `
 };
@@ -83,6 +67,7 @@ export const PageListItemWithIcon: Story = {
   render: () => `
     <aside
         class="
+            page-tree
             list
 
             left-sidebar
@@ -90,36 +75,28 @@ export const PageListItemWithIcon: Story = {
             bar
         "
     >
-        <section
-            class="
-                list-item
+        <nav>
+            <ul
+                class="
+                    page-list
+                    list
+                "
 
-                group-list
-                list
-            "
-        >
-            <nav>
-                <ul
-                    class="
-                        page-list
-                        list
-                    "
-
-                    hx-get="/stories/page-list-item-with-icon.component.html"
-                    hx-trigger="load"
-                    hx-swap="innerHTML"
-                >
-                </ul>
-            </nav>
-        </aside>
+                hx-get="/stories/page-list-item-with-icon.component.html"
+                hx-trigger="load"
+                hx-swap="innerHTML"
+            >
+            </ul>
+        </nav>
     </section>
   `
 };
 
-export const CompletePageListItem: Story = {
+export const PageListItemBase: Story = {
   render: () => `
     <aside
         class="
+            page-tree
             list
 
             left-sidebar
@@ -127,28 +104,19 @@ export const CompletePageListItem: Story = {
             bar
         "
     >
-        <section
-            class="
-                list-item
+        <nav>
+            <ul
+                class="
+                    page-list
+                    list
+                "
 
-                group-list
-                list
-            "
-        >
-            <nav>
-                <ul
-                    class="
-                        page-list
-                        list
-                    "
-
-                    hx-get="/stories/complete-page-list-item.component.html"
-                    hx-trigger="load"
-                    hx-swap="innerHTML"
-                >
-                </ul>
-            </nav>
-        </aside>
-    </section>
+                hx-get="/stories/page-list-item-base.component.html"
+                hx-trigger="load"
+                hx-swap="innerHTML"
+            >
+            </ul>
+        </nav>
+    </aside>
   `
 };
