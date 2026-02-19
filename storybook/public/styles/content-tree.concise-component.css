@@ -1,5 +1,8 @@
-.concise-component main.content-tree.list {
+.concise-component .content-tree.list {
     width: var(--concise-list-width);
+}
+
+.concise-component main.content-tree.list {
     max-height: 100vh;
 }
 
@@ -9,12 +12,12 @@
     overflow-y: auto;
 }
 
-.concise-component li.content-list-item {
+.concise-component .content-list-item {
     display: flex;
     flex-direction: row;
 }
 
-.concise-component li.content-list-item > .content {
+.concise-component .content-list-item > .content {
     width: var(--concise-list-item-content-width);
 
     display: flex;
