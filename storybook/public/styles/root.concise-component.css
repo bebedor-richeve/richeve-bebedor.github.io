@@ -163,13 +163,13 @@
 html:has(.concise-component),
 body:has(.concise-component),
 .concise-component {
-    background-color: var(--concise-base-background-color);
+    background: var(--concise-base-background-color);
 
     height: 100vh;
     width: 100vw;
 }
 
-
+.concise-component article.content-tree,
 .concise-component li.list-item,
 .concise-component nav:has(> .page-list),
 .concise-component ol.list,
@@ -194,6 +194,8 @@ body:has(.concise-component),
 
     margin: 0;
     padding: 0;
+
+    background: unset;
 }
 
 .concise-component h1 {
