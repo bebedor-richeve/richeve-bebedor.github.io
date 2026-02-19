@@ -21,7 +21,7 @@ export const LogoIcon: Story = {
   render: () => `
     <span
         class="
-            logo
+            logo-icon
             icon
         "
 
@@ -29,5 +29,11 @@ export const LogoIcon: Story = {
         hx-trigger="load"
         hx-swap="innerHTML"
     />
+  `
+};
+
+export const LetterIcon: Story = {
+  render: () => `
+    <span class="letter-icon icon">vs</span>
   `
 };
