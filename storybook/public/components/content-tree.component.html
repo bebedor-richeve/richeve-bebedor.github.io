@@ -25,14 +25,7 @@
             </h1>
             <div class="unit-spacer spacer"></div>
         </li>
-        <li
-            class="
-                content-list-item
-                list-item
-
-                level-3
-            "
-        >
+        <li class="content-list-item list-item level-3">
             <div class="unit-spacer spacer"></div>
             <p class="content">
                 open source developer <br/>
@@ -44,19 +37,23 @@
             <div class="unit-spacer spacer"></div>
         </li>
         <li class="list-item spacer"></li>
-        <li
-            class="
-                content-list-item
-                list-item
-
-                level-2
-            "
-        >
+        <li class="content-list-item list-item level-2">
             <div class="unit-spacer spacer"></div>
             <h5 class="support-content content">
-                looking for a web developer?
+                are you gonna hire me?
             </h5>
-            <div class="unit-spacer spacer"></div>
+            <button class="content-list-item-control icon-control control"
+                aria-label="Show more information"
+                hx-get="/partials/are-you-gonna-hire-me.partial.html"
+                hx-target="#are-you-gonna-hire-me"
+                hx-swap="outerHTML">
+                <svg class="icon">
+                    <use href="/assets/images/feather-sprite.svg#chevron-right" />
+                </svg>
+            </button>
+        </li>
+        <li id="are-you-gonna-hire-me"
+            class="hidden content-list-item list-item level-3">
         </li>
         <li
             class="
