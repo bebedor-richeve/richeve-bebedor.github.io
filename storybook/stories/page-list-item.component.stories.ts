@@ -17,18 +17,10 @@ export const PageListItemBare: Story = {
             bar
         "
     >
-        <nav>
-            <ul
-                class="
-                    page-list
-                    list
-                "
+        <nav hx-get="/stories/page-list-item-bare.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML">
 
-                hx-get="/stories/page-list-item-bare.component.html"
-                hx-trigger="load"
-                hx-swap="innerHTML"
-            >
-            </ul>
         </nav>
     </aside>
   `
@@ -46,18 +38,9 @@ export const PageListItemWithControl: Story = {
             bar
         "
     >
-        <nav>
-            <ul
-                class="
-                    page-list
-                    list
-                "
-
-                hx-get="/stories/page-list-item-with-control.component.html"
-                hx-trigger="load"
-                hx-swap="innerHTML"
-            >
-            </ul>
+        <nav hx-get="/stories/page-list-item-with-control.component.html"
+            hx-trigger="load"
+            hx-swap="innerHTML">
         </nav>
     </aside>
   `
